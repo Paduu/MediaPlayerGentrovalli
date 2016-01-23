@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>Media Share</title>
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+		<script language="javascript" type="text/javascript" src="script.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+			
+			//TODO use jquery to put event on all links
+			//$("a").onclick
+			
+			$(document).ready(	function(e) {
+				readAllLinks();
+			});
+			
+		</script>
+	</head>
+	<body onload="connect()">
+
+		<div id="all">
+			<div id="header" style="width:100%;">
+				<h1>Media-Share</h1>
+				<table>
+					<tr>
+						<td class="link"><a class="ilink" data-value="102"><img src="music.png" alt="music" width="150" height="150" /></a></td>
+						<td style="width:50px;"></td>
+						<td class="link"><a class="ilink" data-value="103"><img src="video.jpg" alt="video" width="150" height="150" /></a></td>
+					</tr>
+					<tr>
+						<td><a class="ilink" data-value="102"><b>Music</b></a></td>
+						<td style="width:150px;"></td>
+						<td><a class="ilink" data-value="103"><b>Video</b></a></td>
+					</tr>
+					<tr>
+						<td colspan="3">
+						<hr />
+						</td>
+					</tr>
+					<tr>
+						<td class="link"><a class="ilink" data-value="104"><img src="screen.jpg" alt="Mobile Screen" width="150" height="150" /></a></td>
+						<td></td>
+						<td class="link"><a class="ilink" data-value="199"><img src="shutdown.jpg" alt="Shutdown" width="150" height="150" /></a></td>
+					</tr>
+					<tr>
+						<td><a class="ilink" data-value="104"><b>Screen</b></a></td>
+						<td></td>
+						<td><a class="ilink" data-value="199"><b>Shutdown</b></a></td>
+					</tr>
+				</table>
+				<br />
+				<hr />
+				<br />
+				<h2>Settings</h2>
+				<table>
+					<tr>
+						<td>Music Path:</td>
+						<td><input id="musicPath" type="text" value="{21}" style="width:100%;" /></td>
+					</tr>
+					<tr>
+						<td>Video Path:</td>
+						<td><input id="videoPath" type="text" value="{22}" style="width:100%;" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="right"><a onclick="saveSettings()">Save</a></td>
+					</tr>
+				</table>
+			</div>
+			<br />
+			<br />
+			<br />
+			<div id="log"></div>
+		</div>
+	</body>
+</html>

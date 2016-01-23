@@ -1,0 +1,150 @@
+<div id="header" style="width:100%;position:fixed;background-color:#FFF;z-index: 1000;border-bottom: 1px solid #000;">
+<table id="tableHeader" style="width:100%;border: 0px #000000 solid;" border="0">
+	<tr>
+		<td>
+			<table style="width:100%; height:100%; border: 0px #000000 solid;">
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td rowspan="2"><a class="ilink" data-value="202"><img src="Player_Previous.png" alt="Previous" height="100" width="100" /></a></td>
+								<td rowspan="2"><a class="ilink" data-value="201"><img id="play" src="{204}" alt="Play" height="100" width="100" /></a></td>
+								<td rowspan="2"><a class="ilink" data-value="203"><img src="Player_Next.png" alt="Next" height="100" width="100" /></a></td>
+								<td rowspan="2"><a class="ilink" data-value="204"><img src="Player_Stop.png" alt="Stop" height="100" width="100" /></a></td>
+								<td><a class="ilink" data-value="205"><img src="Player_Volume_Plus.png" alt="pure_volume" height="50" width="50" /></a></td>
+							</tr>
+							<tr>
+								<td><a class="ilink" data-value="206"><img src="Player_Volume_Minus.png" alt="lower_volume" height="50" width="50" /></a></td>
+							</tr>
+						</table>
+						<!--<input id="volume" type="range" min ="0.0" max="1.0" step ="0.1" value ="0.5" onchange="setVolume()" />-->
+					</td>
+					<td>
+						<!--<a onClick="connect()"><img id="connecting" src="Player_Not_Connected.png" alt="NotConnected" height="100" width="100" /></a>-->
+						<a class="ilink" data-value="105"><img id="home" src="home.png" alt="Home" height="100" width="100" /></a>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+<div id="header" style="width:100%;top:130px;position:relative;">
+<table id="tableHeader" style="width:100%;border: 0px #000000 solid;" border="0">
+	<tr>
+		<td>
+			<table style="width:100%;border: 0px #000000 solid;">
+				<tr>
+					<td>Previous</td>
+					<td><input id="songPrevious" type="text" value="{201}" readonly="readonly" style="width:100%;border: 1px #000000 solid;font-size:18px;font-family:Arial;" /></td>
+				</tr>
+				<tr>
+					<td>Playing</td>
+					<td><input id="song" type="text" value="{202}" readonly="readonly" style="width:100%;border: 1px #000000 solid;font-weight:bold;font-size:18px;font-family:Arial;" /></td>
+				</tr>
+				<tr>
+					<td>Next</td>
+					<td><input id="songNext" type="text" value="{203}" readonly="readonly" style="width:100%;border: 1px #000000 solid;font-size:18px;font-family:Arial;" /></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+<div id="content" style="width:100%;border-top: 2px #000000 solid;position:relative;top:130px;">
+	<table style="width:100%;border: 0px #000000 solid;" cellspacing="0" cellpadding="0">
+	<tr>
+		<!--<td style="width:20%;border-right: 0px #000000 solid;background-color: #DDDDDD;" valign="top" align="right">
+			
+			<div id="folders">
+				<!--{205}
+				 EXAMPLE
+				<table style="width:100%;" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="folder">All</td>
+					</tr>
+					<tr>
+						<td class="folder_selected">Neu</td>
+					</tr>
+					<tr>
+						<td class="folder">Zuletzt hinzugef&uuml;gt</td>
+					</tr>
+				</table>
+			</div>
+			<div id="empty">
+			</div>
+		</td>-->
+		<td style="width:100%;" valign="top">
+			<div id="songTable">
+				{206}
+				<!--<table style="width: 100%;">
+					<tr class="zeileHeader">
+						<td><b>Nr.</b></td>
+						<td><b>Song</b></td>
+					</tr>
+					<tr class="zeileZwei">
+						<td>1</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="songCol">
+						<td>2</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="zeileZwei">
+						<td>3</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="songCol">
+						<td>4</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="zeileZwei">
+						<td>5</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="songCol">
+						<td>1</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="zeileZwei">
+						<td>2</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="songCol">
+						<td>3</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="zeileZwei">
+						<td>4</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="songCol">
+						<td>5</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="zeileZwei">
+						<td>1</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="songCol">
+						<td>2</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="zeileZwei">
+						<td>3</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="songCol">
+						<td>4</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+					<tr class="zeileZwei">
+						<td>5</td>
+						<td>Roses - Hammerhead</td>
+					</tr>
+				</table>-->
+			</div>
+		</td>
+	</tr>
+</table>
+</div>

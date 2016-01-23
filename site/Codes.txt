@@ -1,0 +1,40 @@
+Code für Übertragung:
+
+Split Char: |
+RECEIVE: Client receive
+
+1XX = Site Content und Sonstiges
+	101: Site Content (Update) RECEIVE
+	102: Music home site SEND
+	103: Video home site SEND
+	104: Screen home site SEND
+	105: Home Site SEND
+	
+	150: Save Settings SEND
+	
+	197: Alerts RECEIVE
+	198: disconnected SEND
+	199: shutdown SEND
+
+2XX = Music codes
+	201: Play Pause SEND
+	202: Previous SEND
+	203: Next SEND
+	204: Stop SEND
+	205: Volume Plus SEND
+	206: Volume Minus SEND
+	207: Change Folder SEND
+	208: Change Song SEND
+	
+	Replaces:
+		201: Previous Song
+		202: Song
+		203: Next Song
+		204: PlayPause img
+		205: Folders Table
+		206: Song Table
+	
+3XX = Video codes
+4XX = Remote Control (Screen) codes
+
+

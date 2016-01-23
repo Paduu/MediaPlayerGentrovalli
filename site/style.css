@@ -1,0 +1,56 @@
+body {
+	margin: 0px;
+}
+a:hover {
+	cursor: pointer;
+}
+tr.zeileZwei { 
+	background-color: #EEEEEE; 
+	cursor: pointer;
+	height: 50px;
+}
+tr.zeileZwei:hover { 
+	background-color: #DDDDDD; 
+	cursor: pointer;
+}
+tr.zeileHeader { background-color: #BBBBFF; }
+li.selected { background-color: #DDDDDD; font-weight: bold; }
+td.folder_selected { 
+	border-top: 1px #000000 solid;
+	border-bottom: 1px #000000 solid;
+	border-left: 1px #000000 solid;
+	text-align: right;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	padding: 10px;
+	font-size: 20px;
+	font-family: Arial;
+}
+td.folder { 
+	border-right: 1px #000000 solid;
+	text-align: right;
+	padding: 10px;
+	font-size: 20px;
+	font-family: Arial;
+}
+td.folder:hover { 
+	background-color: #EEEEEE;
+	text-align: right;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: Arial;
+}
+div#empty {
+	display: block;
+	min-height: 400px;
+	height: 100%;
+	border-right: 1px #000000 solid;
+}
+tr.songCol {
+	height: 50px;
+}
+tr.songCol:hover {
+	cursor: pointer;
+	background-color: #DDDDDD;
+}
