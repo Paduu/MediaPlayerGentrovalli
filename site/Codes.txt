@@ -1,4 +1,4 @@
-Code für Übertragung:
+﻿Code für Übertragung:
 
 Split Char: |
 RECEIVE: Client receive
@@ -25,6 +25,7 @@ RECEIVE: Client receive
 	206: Volume Minus SEND
 	207: Change Folder SEND
 	208: Change Song SEND
+	209: Search Song SEND
 	
 	Replaces:
 		201: Previous Song
@@ -36,5 +37,13 @@ RECEIVE: Client receive
 	
 3XX = Video codes
 4XX = Remote Control (Screen) codes
+	401: Right Klick
+	402: Left Klick
+	403: Mouse up
+	404: Mouse down
+	405: Mouse right
+	406: Mouse left
+	407: Key pressed
+	408: Backspace pressed
 
 
